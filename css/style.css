@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@100..900&display=swap');
+:root {
+    --font-color: #464646;
+    --background-color: #F5F5F5;
+    --link-color: #000;
+    --background-color-highlight: #EAF2FD;
+    --font: 'Raleway', sans-serif;
+    --background-color-cards: #FFFFFF;
+    --color-icons: #2A7AE4;
+    --cor-texto-principal: #464646;
+    --cor-bg: #FFFFFF;
+    --cor-destaque: #B662D3;
+    --cor-cards: #F5F5F5;
+    --cor-bg-sections: #EFE5E5;
+    --cor-field-error: #d93025;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color);
+}
+
+html {
+    background-color: var(--cor-bg);
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
