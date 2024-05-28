@@ -14,7 +14,9 @@
 </head>
 <body>
     <header class="header" id="header">
-        <h1>Andressa Turchetto</h1>
+        <a href="#" class="">
+            <h2>Andressa Turchetto</h2>
+        </a>
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class='bx bx-menu' id="menu-icon"></i>
@@ -31,50 +33,56 @@
     <main>
         <section class="home" id="home">
             <div class="home-sci">
-                <a href="https://www.linkedin.com/in/andressadev/" target="_blank">
-                    <img src="./assets/icon-linkedin.svg" alt="Linkedin">
-                </a>
-                <a href="https://github.com/AndressaTurchetto/" target="_blank">
-                    <img src="./assets/icon-github.svg" alt="Github">
-                </a>
-                <a href="assets/Currículo - Andressa Turchetto.pdf" target="_blank">
-                    <img src="./assets/icon-cloud.svg" alt="Download Currículo">
-                </a>
+                <a href="https://www.linkedin.com/in/andressadev/" target="_blank"><img src="./assets/icon-linkedin.svg" alt="Linkedin"></a>
+                <a href="https://github.com/AndressaTurchetto/" target="_blank"><img src="./assets/icon-github.svg" alt="Github"></a>
+                <a href="assets/Currículo - Andressa Turchetto.pdf" target="_blank"><img src="./assets/icon-cloud.svg" alt="Download Currículo"></a>
             </div>
             <div class="home-content">
                 <h1>Olá, eu sou a <span>Andressa!</span></h1>
                 <h3>E atuo como <span class="multiplos-textos"></span></h3>
-                <p>Trabalho com as tecnologias HTML, CSS, Tailwind, Javascript, Typescript e Angular.</p>
+                <p>Desde que me interessei na área de programação, estudo diariamente para conseguir a minha primeira oportunidade como desenvolvedora Jr. Há 9 meses venho desenvolvendo diversos projetos para colocar em pratica todo o meu conhecimento.</p>
             </div>
         </section>
         <section class="sobre_mim" id="sobremim">
             <h2>Sobre Mim</h2>
-            <div class="sobre-info" id="sobremim">
-                <img class="title__profile" src="img/profile.jpeg" alt="Foto Andressa Turchetto">
-                <p>
-                    Realizando um sonho que é ingressar no mercado de trabalho como desenvolvedora Front-End, estou no terceiro período de Engenharia de Software na Estácio. <br><br>
-                    Estou dedicando meu tempo para aprimorar meus conhecimentos na área de desenvolvimento Front-End e adquirir sólidos conhecimentos nas tecnologias mais usadas. Tenho muita curiosidade e paixão por desenvolvimento web, incluindo design responsivo, performance, acessibilidade, etc.
-                </p>
+            <div class="sobre-info">
+                <img src="./assets/img/profile.jpeg" alt="Foto Andressa Turchetto">
+                <p>Realizando um sonho de ingressar no mercado de trabalho como desenvolvedora Front-End, estou no terceiro período de Engenharia de Software na Estácio. <br><br>
+                Estou dedicando meu tempo para aprimorar meus conhecimentos na área de desenvolvimento Front-End e adquirir sólidos conhecimentos nas tecnologias mais usadas. Tenho muita curiosidade e paixão por desenvolvimento web, incluindo design responsivo, performance, acessibilidade, etc.</p>
             </div>
         </section>
-        
         <section class="skills" id="skills">
             <h2>Skills & Hobbies</h2>
             <p>Fora do trabalho, tenho uma paixão por leitura e filmes. Nos momentos de lazer, pratico caminhada para manter o equilíbrio entre corpo e mente.</p>
-            <div class="cards">
-                <div class="skills-card">
-                    <div class="skills-text">
-                        <img class="icon-skills" src="./assets/icon-arrowskills.svg" alt="Arrow Skills">
-                        <h3>Skills</h3>
+            <div class="cards-container">
+                <div class="cards-formacao">
+                    <div class="title">
+                        <img class="icon-formacao" src="./assets/icon-arrowskills.svg" alt="Skills">
+                        <h3 class="h3-title">Skills</h3>
                     </div>
-                    <img class="img-skills" src="./assets/lista-skills.svg" alt="Lista de skills">
+                    <div class="cards-content">
+                        <h4>Angular</h4>
+                        <h4>JavaScript</h4>
+                        <h4>TypeScript</h4>
+                        <h4>Git|Node.js</h4>
+                        <h4>Servidores Web</h4>
+                        <h4>Tailwind</h4>
+                        <h4>SO Windows|Linux</h4>  
+                    </div>
                 </div>
-                <div class="hobbies-card">
-                    <div class="hobbies-text">
-                        <img class="icon-hobbies" src="./assets/icon-hobbies.svg" alt="Equilibrio da vida">
-                        <h3>Hobbies</h3>
+                <div class="cards-formacao">
+                    <div class="title">
+                        <img class="icon-formacao" src="./assets/icon-hobbies.svg" alt="Hobbies">
+                        <h3 class="h3-title">Hobbies</h3>
                     </div>
-                    <img class="img-hobbies" src="./assets/lista-hobbies.svg" alt="Lista de hobbies">
+                    <div class="cards-content">
+                        <h4>Caminhada</h4>
+                        <h4>Filmes e séries</h4>
+                        <h4>Leitura</h4>
+                        <h4>Culinária</h4>
+                        <h4>Passeios</h4>
+                        <h4>Culinária</h4>                
+                    </div>
                 </div>
             </div>
         </section>
@@ -112,7 +120,25 @@
             <p>Projetos realizados.</p>
             <div class="card-container">
                 <div class="card">
-                    <img src="img/projeto-agencia-de-viagem.jpeg" alt="Projeto Agência de Viagens">
+                    <img src="./assets/img/projeto-formulario-validacao-angular.jpeg" alt="Exemplo">
+                    <div class="card-content">
+                        <h4>Desenvolvimento Front-End</h4>
+                        <h3>Formulário Reactive Form - Tamplete-Driven</h3>
+                        <p>Projeto possui dois formulários de validação Angular, um com Reactive Form e outro com Tamplete Driven e estilização com Tailwind.</p>
+                        <a href="https://github.com/AndressaTurchetto/formulario-angular" class="btn" target="_blank">Repositório</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/img/projeto-memorando.jpeg" alt="Exemplo">
+                    <div class="card-content">
+                        <h4>Desenvolvimento Front-End</h4>
+                        <h3>Memorando</h3>
+                        <p>Projeto feito com Angular para listar e organizar taferas de casa, trabalho e estudo.</p>
+                        <a href="https://github.com/AndressaTurchetto/Angular/tree/main/animacoes-angular" class="btn" target="_blank">Repositório</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/projeto-agencia-de-viagem.jpeg" alt="Projeto Agência de Viagens">
                     <div class="card-content">
                         <h4>Desenvolvimento Front-End</h4>
                         <h3>Agência de Viagens</h3>
@@ -122,47 +148,47 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/projeto-clinica.jpeg" alt="Projeto Clínica">
+                    <img src="./assets/img/projeto-clinica.jpeg" alt="Projeto Clínica">
                     <div class="card-content">
                         <h4>Desenvolvimento Front-End</h4>
                         <h3>Clínica CM Life</h3>
                         <p>Uma página web responsiva utilizando as tecnologias HTML e CSS com tags semânticas, tabelas, Flexbox e media queries.</p>
                         <a href="https://github.com/AndressaTurchetto/projeto-dev-2/tree/main/projeto-clinica" class="btn" target="_blank">Repositório</a>
-                        <a href="file:///C:/Users/ANDRESSA/Documents/estudos/projeto-dev-2/projeto-clinica/index.html" class="btn" target="_blank">Deploy</a>
+                        <a href="https://andressaturchetto.github.io/projeto-dev-2/projeto-clinica/index.html" class="btn" target="_blank">Deploy</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/projeto-pet-boutique.png" alt="Projeto Pet Boutique">
+                    <img src="./assets/img/projeto-pet-boutique.png" alt="Projeto Pet Boutique">
                     <div class="card-content">
                         <h4>Desenvolvimento Front-End</h4>
                         <h3>Pet Boutique</h3>
                         <p>Usei as imagens para preencher o fundo dos elementos e sombra para destacar elementos. Utilizei um recurso conversa com um clique do WhatsApp e um mapa interativo do Google Maps apresentando a localização da loja.</p>
                         <a href="https://github.com/AndressaTurchetto/pet-boutique" class="btn" target="_blank">Repositório</a>
-                        <a href="#" class="btn" target="_blank">Deploy</a>
+                        <a href="https://pet-boutique-8pfvyufvn-andressaturchettos-projects.vercel.app" class="btn" target="_blank">Deploy</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/projeto-cafeteria.png" alt="Projeto Cafeteria">
+                    <img src="./assets/img/projeto-cafeteria.png" alt="Projeto Cafeteria">
                     <div class="card-content">
                         <h4>Desenvolvimento Front-End</h4>
                         <h3>Cafeteria Manhattan</h3>
                         <p>Projeto feito apenas com HTML e CSS para estudo com um layout refinado. Foi implementado lista informativa, efeito "flutuante" no link do rodapé, mapa de localização e um estilo com efeito parallax.</p>
                         <a href="https://github.com/AndressaTurchetto/cafeteria-manhattan" class="btn" target="_blank">Repositório</a>
-                        <a href="#" class="btn" target="_blank">Deploy</a>
+                        <a href="https://cafeteria-manhattan-iauu06y4y-andressaturchettos-projects.vercel.app" class="btn" target="_blank">Deploy</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/projeto-bio-neymar.png" alt="Exemplo">
+                    <img src="./assets/img/projeto-bio-neymar.png" alt="Exemplo">
                     <div class="card-content">
                         <h4>Desenvolvimento Front-End</h4>
                         <h3>Projeto Neymar Jr</h3>
                         <p>O projeto é um LinkBio personalizada, aplicando o conceito de Pseudo-classes e pseudo-elementos e utilizando a tag vídeo.</p>
                         <a href="https://github.com/AndressaTurchetto/projeto-dev-2/tree/main/projeto-neymar" class="btn" target="_blank">Repositório</a>
-                        <a href="file:///C:/Users/ANDRESSA/Documents/estudos/projeto-dev-2/projeto-neymar/index.html" class="btn" target="_blank">Deploy</a>
+                        <a href="https://andressaturchetto.github.io/projeto-dev-2/projeto-neymar/index.html" class="btn" target="_blank">Deploy</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/projeto-lista-de-compras.jpeg" alt="Exemplo">
+                    <img src="./assets/img/projeto-lista-de-compras.jpeg" alt="Exemplo">
                     <div class="card-content">
                         <h4>Desenvolvimento Front-End</h4>
                         <h3>Lista de Compras</h3>
@@ -171,38 +197,14 @@
                         <a href="https://github.com/AndressaTurchetto/lista-de-compras/tree/master" class="btn" target="_blank">Deploy</a>
                     </div>
                 </div>
-
-                <div class="card">
-                    <img src="#" alt="Exemplo">
-                    <div class="card-content">
-                        <h4>Desenvolvimento Front-End</h4>
-                        <h3>Exemplo exemplo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sapiente eum quod, consectetur laboriosam non modi commodi consequuntur expedita officia cumque. Temporibus praesentium sapiente odit explicabo asperiores repellat corporis saepe.</p>
-                        <a href="#" class="btn" target="_blank">Repositório</a>
-                        <a href="#" class="btn" target="_blank">Deploy</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="#" alt="Exemplo">
-                    <div class="card-content">
-                        <h4>Desenvolvimento Front-End</h4>
-                        <h3>Exemplo exemplo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sapiente eum quod, consectetur laboriosam non modi commodi consequuntur expedita officia cumque. Temporibus praesentium sapiente odit explicabo asperiores repellat corporis saepe.</p>
-                        <a href="#" class="btn" target="_blank">Repositório</a>
-                        <a href="#" class="btn" target="_blank">Deploy</a>
-                    </div>
-                </div>
-
-                
             </div>
         </section>
         <section class="contato" id="contato">
             <h2>Contato</h2>
-            <p>Vamos conversar? Trocar ideias, fazer networking, orçamentos, propostas... Fique à vontade em me mandar uma mensagem!</p>
+            <p>Vamos conversar?</p>
             <form action="#">
                 <div class="input-box">
-                    <div class="input-fiel field">
+                    <div class="input-field field">
                         <input type="text" placeholder="Nome" id="name" class="item" autocomplete="off">
                         <div class="error-txt">Coloque seu nome completo.</div>
                     </div>
@@ -221,7 +223,7 @@
                     <textarea name="" id="message" cols="30" rows="10" placeholder="Mensagem" class="item" autocomplete="off"></textarea>
                     <div class="error-txt">Preencha com a sua mensagem.</div>
                 </div>
-                <button type="submit">Enviar mensagem</button>
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>

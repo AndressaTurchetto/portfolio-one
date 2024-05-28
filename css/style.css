@@ -53,16 +53,10 @@ button {
     cursor: pointer;
 }
 
-.title__profile {
-    border-radius: 50%;
-}
-
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 2rem 10%;
+    padding: 2rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,17 +66,10 @@ button {
 .header::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: var(--cor-bg);
     z-index: -1;
-}
-
-.logo {
-    font-size: 2rem;
-    cursor: default;
 }
 
 .navbar a {
@@ -111,37 +98,35 @@ button {
 }
 
 /*HOME*/
-
 .home {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 8%;
 }
 
 .home-content {
-    max-width: 500px;
+    max-width: 800px;
+}
+
+.home-content h1, .home-content h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .home-content h1 {
     font-size: 58px;
-    font-weight: 700;
     line-height: 1.1;
-}
-
-.home-content h1 span {
-    color: var(--cor-destaque);
 }
 
 .home-content h3 {
     font-size: 23px;
-    font-weight: 700;
     margin: 20px 0;
 }
 
-.home-content span {
+.home-content h1 span, .home-content span {
     color: var(--cor-destaque);
 }
 
@@ -164,7 +149,7 @@ button {
     z-index: 1;
 }
 
-.home-sci a::before {
+.home-sci a::before, .home-sci a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -173,15 +158,12 @@ button {
     transition: .5s ease;
 }
 
-.home-sci a:hover::before {
-    filter: blur(5px);
+.home-sci a::before {
+    background: rgba(255, 255, 255, 0.5);
 }
 
-.home-sci a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.home-sci a:hover::before {
+    filter: blur(5px);
 }
 
 .home-img {
@@ -190,7 +172,6 @@ button {
 }
 
 /*SOBRE MIM*/
-
 .sobre_mim {
     display: flex;
     justify-content: center;
@@ -218,6 +199,9 @@ button {
 .sobre-info img {
     width: 410px;
     height: 450px;
+    margin-top: -20px; 
+    border-radius: 50%;
+    padding-bottom: 50px;
 }
 
 .sobre-info p {
@@ -228,7 +212,6 @@ button {
 }
 
 /*SKILLS*/
-
 .skills {
     display: flex;
     justify-content: center;
@@ -236,6 +219,13 @@ button {
     flex-direction: column;
     padding: 0 8%;
     margin-bottom: 90px;
+}
+
+.skills h4 {
+    color: var(--font-color);
+    opacity: 0.8;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
 .skills h2 {
@@ -310,6 +300,7 @@ button {
     padding: 20px 20px;
 }
 
+/* HOBBIES */
 .hobbies-card {
     display: flex;
     justify-content: center;
@@ -336,7 +327,6 @@ button {
 }
 
 /*FORMAÇÃO ACADÊMICA*/ 
-
 .formacao {    
     display: flex;
     justify-content: center;
@@ -429,7 +419,6 @@ button {
 }
 
 /*PROJETOS*/
-
 .projetos {
     display: flex;
     justify-content: center;
@@ -473,6 +462,10 @@ button {
     margin: 40px;
 }
 
+.card:hover {
+    transform: scale(1.02);
+}
+
 .card img {
     width: 100%;
     height: 200px;
@@ -510,12 +503,13 @@ button {
     display: inline-block;
     padding: 8px 16px;
     background-color: transparent;
-    border: 3px solid var(--cor-destaque);
+
     border-radius: 5px;
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
     color: var(--cor-texto-principal);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
     margin: 4px;
     transition: all .3s ease;
 }
@@ -526,7 +520,6 @@ button {
 }
 
 /*CONTATO*/
-
 .contato {
     display: flex;
     justify-content: center;
@@ -637,7 +630,6 @@ form button:hover {
 
 
 /*RODAPÉ*/
-
 .rodape {
     display: flex;
     justify-content: space-between;
@@ -670,9 +662,7 @@ form button:hover {
     font-size: 2.4rem;
 }
 
-
-/*RESPONSIVIDADE*/
-
+/* MEDIA QUERIES */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
