@@ -71,9 +71,9 @@ form.addEventListener("submit", (e) => {
     }
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('dark-mode-toggle');
-    toggleButton.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-    });
+const toggleInput = document.getElementById('darkModeToggle');
+const body = document.body;
+
+toggleInput.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
 });

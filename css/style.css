@@ -54,8 +54,72 @@ button {
 }
 
 body.dark-mode {
-    background-color: black;
-    color: white;
+    background-color: var(--link-color);
+    color: var(--cor-bg);
+}
+
+.custom-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-bg);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: var(--cor-destaque);
+}
+
+
+body.dark-mode .custom-button {
+    background-color: #555;
+    color: var(--link-color);
+}
+
+body.dark-mode .custom-button:hover {
+    background-color: #666;
+}
+
+.toggle-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-label .toggle-button {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--cor-bg);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-label {
+    background-color: var(--cor-destaque);
+}
+
+.toggle-input:checked + .toggle-label .toggle-button {
+    transform: translateX(26px);
 }
 
 .header {
