@@ -25,6 +25,12 @@
     color: var(--font-color);
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 html {
     background-color: var(--cor-bg);
     font-size: 62.5%;
@@ -191,9 +197,9 @@ body.dark-mode .custom-button:hover {
     color: var(--cor-destaque);
 }
 
-.home-content p {
+p {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     margin: 20px 0 40px;
 }
@@ -262,13 +268,6 @@ body.dark-mode .custom-button:hover {
     margin-top: -20px; 
     border-radius: 50%;
     padding-bottom: 50px;
-}
-
-.sobre-info p {
-    width: 699px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
 }
 
 /*SKILLS*/
@@ -404,16 +403,6 @@ body.dark-mode .custom-button:hover {
     display: flex;
     justify-content: center;
     margin-bottom: 45px;
-}
-
-.formacao p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    width: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .cards-container {
@@ -610,13 +599,17 @@ body.dark-mode .custom-button:hover {
 }
 
 .contato form {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
+    padding: 0 10px;
 }
 
 form .input-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .input-box .input-field {
@@ -688,7 +681,6 @@ form button:hover {
     color: var(--cor-bg);
 }
 
-
 /*RODAPÉ*/
 .rodape {
     display: flex;
@@ -754,7 +746,7 @@ form button:hover {
         font-size: 18px;
     }
 
-    .home-content p {
+    p {
         font-size: 14px;
     }
 
@@ -827,19 +819,23 @@ form button:hover {
     }
 
     .home-content {
-        margin-top: 60px;
-    }
-
-    .home-content h3 {
-        font-size: 2.6rem;
+        max-width: 100%;
+        padding: 0 10px;
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 40px;
+        line-height: 1.2;
     }
 
-    .home-content p {
-        font-size: 13px;
+    .home-content h3 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 15px 0 30px;
     }
 
     .home-img img {
@@ -858,11 +854,70 @@ form button:hover {
         height: 40%;        
     }
 
+    .skills p {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .skills h2 {
+        font-size: 32px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .skills h4 {
+        font-size: 16px;
+    }
+
     .skills .cards {
         gap: 50px;
     }
+    
+    /* .contato p {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 14px;
+    } */
+
+    .contato p {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%; /* Ajuste para 100% */
+        max-width: 650px; /* Máximo de 650px */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    form .input-box {
+        flex-direction: column;
+    }
+
+    form .input-box .input-field {
+        width: 100%;
+    }
+    
 }
 
+/* 
+@media (max-width: 480px) {
+    .contato h2 {
+        font-size: 28px; 
+    }
+
+    .contato p {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+
+    .field .item {
+        font-size: 14px;
+        padding: 12px;
+    }
+} */
 
 
 
