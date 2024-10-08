@@ -3,6 +3,8 @@ const nome = document.getElementById("name");
 const email = document.getElementById("email");
 const assunto = document.getElementById("subject");
 const mensagem = document.getElementById("message");
+const toggleInput = document.getElementById('darkModeToggle');
+const body = document.body;
 
 const typed = new Typed('.multiplos-textos', {
     strings: ['Desenvolvedora Front-end', 'Programadora'],
@@ -71,9 +73,7 @@ form.addEventListener("submit", (e) => {
     }
 })
 
-const toggleInput = document.getElementById('darkModeToggle');
-const body = document.body;
-
+// Dark Mode
 toggleInput.addEventListener('change', () => {
     body.classList.toggle('dark-mode');
 });
