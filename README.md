@@ -1,10 +1,13 @@
 # Portfólio
 
-Bem-vindo ao meu portfólio! Aqui você encontrará uma coleção de meus projetos, habilidades e experiências.
+Bem-vindo ao **Portfólio da Andressa**! Aqui você encontrará uma coleção de meus projetos, habilidades, experiências e meus contatos, links e alguns dos meus projetos.
 
 ## Sobre Mim
 
-Sou a Andressa Turchetto, uma desenvolvedora Web com interesse em tecnologia. Tenho experiência em Angular e Node.js e estou sempre em busca de aprender mais.
+Eu sou a **Andressa Turchetto**, desenvolvedor web e como estudante de Engenharia de Software na Estácio, estou expandindo meus conhecimentos técnicos, o que me permite inovar e buscar a excelência no desenvolvimento de projetos web. A minha meta é continuar crescendo como desenvolvedora, contribuindo com soluções tecnológicas que impactam positivamente a experiência dos usuários.
+
+- **LinkedIn:** [Andressa Turchetto](https://www.linkedin.com/in/andressadev/)
+
 
 ## Projetos
 
@@ -33,20 +36,27 @@ Aqui estão alguns dos meus projetos.
 - SO: WINDOWS e LINUX
 - MICROSSERVIÇOS | ARQUITETURA DE SOFTWARE
 
+## 🎁 Como Contribuir
+
+Se você tem sugestões de melhorias ou encontrou algum bug, fique à vontade para contribuir com o projeto. Basta abrir uma issue ou fazer um pull request.
+
 ## Contato
 
 Se você deseja entrar em contato, fique à vontade para me enviar um e-mail para and.turchetto@gmail.com ou me encontrar nas redes sociais:
 
-- [LinkedIn](https://www.linkedin.com/in/andressadev/)
-- [GitHub](https://github.com/AndressaTurchetto/)
+**LinkedIn:** [LinkedIn](https://www.linkedin.com/in/andressadev/)
+**GitHub:** [GitHub](https://github.com/AndressaTurchetto/)
 
 Obrigado por visitar meu portfólio!
 
 ## Clonando o Repositório
 
-Para clonar este repositório, você pode usar o seguinte comando Git:
-
+1. **Clone o Repositório**
 git clone https://github.com/AndressaTurchetto/portfolio-one.git
+
+## 🎁 Como Contribuir
+
+Se você tem sugestões de melhorias ou encontrou algum bug, fique à vontade para contribuir com o projeto. Basta abrir uma issue ou fazer um pull request.
 
 ## Capturas de Tela
 
